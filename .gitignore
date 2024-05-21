@@ -19,18 +19,19 @@
 
 # Configuration
 wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
+/.env
 
 # Uploads
 /wp-content/uploads/
 
 # Log files
 *.log
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
 
 # htaccess
 /.htaccess
@@ -39,10 +40,23 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
-#/wp-content/plugins
+/wp-content/plugins/*
+/wp-content/mu-plugins/*
+
+# Keep Specific Plugins
+#!/wp-content/plugins/advanced-custom-fields-pro
 
 # All themes
 #
 # Note: If you wish to whitelist themes,
 # uncomment the next line
-#/wp-content/themes
+/wp-content/themes/*
+
+# Keep Specific Themes
+!/wp-content/themes/change-me
+
+# All the rest
+/vendor
+.DS_Store
+.idea
+/src
