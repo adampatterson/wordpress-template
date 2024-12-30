@@ -23,7 +23,7 @@ gh repo clone owner/new_repo site.test
 ```shell
 mkdir site.test
 cd site.test
-git checkout git@github.com:adampatterson/wordpress-template.git .
+git clone git@github.com:adampatterson/wordpress-template.git .
 ```
 
 **Hydrate WordPress**
